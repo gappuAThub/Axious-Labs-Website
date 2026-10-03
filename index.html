@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axious Labs — Student-Led AI Technology Venture & Engineering Lab</title>
+  <meta name="description" content="Axious Labs is a student-led AI technology venture building practical products across Generative AI, Agentic AI, and intelligent software. Featured product: CareerAI.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/axious-favicon.svg">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       STICKY NAVBAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="index.html" class="nav-logo-link" aria-label="Axious Labs Home">
+          <img src="assets/logo/axious-icon.svg" alt="Axious Labs" class="nav-logo-icon" width="28" height="28">
+          <span class="nav-brand-text">AXIOUS <span>LABS</span></span>
+        </a>
+        <span class="badge badge-student">STUDENT-LED</span>
+      </div>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="careerai.html" class="nav-link">CareerAI</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Axious-Labs" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="GitHub Organization">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="careerai.html" class="btn btn-primary btn-sm">
+          <span>Explore CareerAI</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="nav-mobile-toggle" aria-label="Toggle Navigation Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="careerai.html" class="nav-link">CareerAI</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="team.html" class="nav-link">Team</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-actions">
+      <a href="careerai.html" class="btn btn-primary" style="width:100%;">Explore CareerAI</a>
+      <a href="https://github.com/Axious-Labs" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width:100%;">View GitHub Org</a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-header">
+        <div class="hero-pre-badge">
+          <span>AIML PRE-RELEASE // V2.4</span>
+          <span class="tag">[STUDENT-LED]</span>
+        </div>
+
+        <h1 class="hero-headline">
+          Building practical AI,<br>
+          <span class="gradient-text">not just prototypes.</span>
+        </h1>
+
+        <p class="hero-subheadline">
+          Axious Labs is a student-led AI technology venture focused on learning by building real software systems. We engineer production-grade LLM architectures, robust multi-agent orchestration, and developer tooling grounded in rigorous software engineering disciplines.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="careerai.html" class="btn btn-primary btn-lg">
+            <span>Explore CareerAI</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/Axious-Labs" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4 Small Technical Metadata Cards -->
+      <div class="hero-meta-grid">
+        <div class="hero-meta-card">
+          <div class="hero-meta-label">PROJECT GOAL</div>
+          <div class="hero-meta-value">
+            <span class="dot"></span>
+            Zero Paperware
+          </div>
+        </div>
+        <div class="hero-meta-card">
+          <div class="hero-meta-label">CORE FOCUS</div>
+          <div class="hero-meta-value">
+            <span class="dot"></span>
+            MCP &amp; Graph
+          </div>
+        </div>
+        <div class="hero-meta-card">
+          <div class="hero-meta-label">METHODOLOGY</div>
+          <div class="hero-meta-value">
+            <span class="dot"></span>
+            Continuous Eval
+          </div>
+        </div>
+        <div class="hero-meta-card">
+          <div class="hero-meta-label">CADENCE</div>
+          <div class="hero-meta-value">
+            <span class="dot"></span>
+            Weekly Releases
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Dual-Panel (Code Terminal + Lab Workspace) -->
+      <div class="hero-visual-grid">
+        <!-- Interactive Terminal Card -->
+        <div class="tech-terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <div class="terminal-title">RAG_VEC_SIMILARITY_ENGINE / V0.2</div>
+            <div class="terminal-badge">LATENCY : 39.4MS [L19]</div>
+          </div>
+
+          <div class="terminal-tabs">
+            <button class="term-tab active" data-tab="rag">hybrid_rag.py</button>
+            <button class="term-tab" data-tab="agent">langgraph_agent.py</button>
+            <button class="term-tab" data-tab="mcp">mcp_tool_provider.py</button>
+          </div>
+
+          <div class="terminal-body">
+            <div class="code-line">
+              <span class="line-num">01</span>
+              <span class="code-content"><span class="c-kw">async def</span> <span class="c-fn">run_hybrid_rag</span>(query: <span class="c-type">Embedding</span>) -&gt; <span class="c-type">QueryExecution</span>:</span>
+            </div>
+            <div class="code-line">
+              <span class="line-num">02</span>
+              <span class="code-content">    <span class="c-comment"># Dynamic semantic temperature across vector branches</span></span>
+            </div>
+            <div class="code-line">
+              <span class="line-num">03</span>
+              <span class="code-content">    select = <span class="c-kw">await</span> pg_pgvector.<span class="c-fn">top_k</span>(query.prompt, <span class="c-param">top_k</span>=24, <span class="c-param">ef_search</span>=128)</span>
+            </div>
+            <div class="code-line">
+              <span class="line-num">04</span>
+              <span class="code-content">    rerank_nodes = vector_fusion.<span class="c-fn">cross_merge</span>(select, <span class="c-param">lambda_coef</span>=0.78, <span class="c-param">alpha</span>=3)</span>
+            </div>
+            <div class="code-line">
+              <span class="line-num">05</span>
+              <span class="code-content">    exec_runtime = langgraph_pipeline.<span class="c-fn">with_context</span>(rerank_nodes, <span class="c-param">token_budget</span>=TokenBudget(2048))</span>
+            </div>
+            <div class="code-line">
+              <span class="line-num">06</span>
+              <span class="code-content">    <span class="c-kw">return await</span> state_machine.<span class="c-fn">eval_until_resolution</span>(exec_runtime)</span>
+            </div>
+          </div>
+
+          <div class="terminal-footer-meta">
+            <div class="terminal-metric">
+              <svg class="sparkline-svg" viewBox="0 0 60 18">
+                <path d="M1 14 L12 10 L24 13 L36 5 L48 9 L59 2" fill="none" stroke="#38BDF8" stroke-width="2"/>
+              </svg>
+              <span>RETRIEVAL LATENCY: <strong class="term-metric-val">92.8%</strong></span>
+            </div>
+            <div class="terminal-metric">
+              <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:#10B981; margin-right:4px;"></span>
+              <span class="term-metric-lbl">Distributed vector-slice evaluation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Lab Workspace Callout Card -->
+        <div class="lab-workspace-card">
+          <div class="lab-img-wrapper">
+            <img src="assets/images/axious_lab_workspace.jpg" alt="Axious Labs AI Engineering Workspace" class="lab-workspace-img">
+            <div class="lab-workspace-overlay">
+              <div class="lab-workspace-caption">
+                <span>AXIOUS LABS WORKSPACE CALLOUT // 01</span>
+                Undergraduate engineers deploying distributed AI platforms.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: THREE OPERATING PRINCIPLES (CORE AXIOMS)
+       ========================================================================== -->
+  <section class="section" id="principles">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-label">CORE AXIOMS</span>
+          <h2 class="section-title">Three Operating Principles</h2>
+          <p class="section-subtitle">
+            Grounding student engineering in industrial rigor, measurable benchmarks, and radical transparency.
+          </p>
+        </div>
+        <div class="mono" style="font-size:11px; color:var(--text-muted);">
+          PERMUTATION // 0x03
+        </div>
+      </div>
+
+      <div class="principles-grid">
+        <!-- 01 BUILD -->
+        <div class="principle-card">
+          <div class="principle-top">
+            <div class="principle-icon-box icon-box-indigo">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span class="principle-num">01</span>
+          </div>
+          <h3 class="principle-title">BUILD</h3>
+          <div class="principle-tagline">Code Over Theory</div>
+          <p class="principle-desc">
+            Turn ideas into working products. We prioritize working code, deployed milestones, and tangible user interfaces over theoretical architecture. If it does not serve real users in production, it is incomplete.
+          </p>
+          <div class="principle-footer">
+            <span class="principle-meta-label">Current Metric</span>
+            <span class="principle-meta-val">Time-to-Production &lt;14 DAYS</span>
+          </div>
+        </div>
+
+        <!-- 02 LEARN -->
+        <div class="principle-card">
+          <div class="principle-top">
+            <div class="principle-icon-box icon-box-cyan">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <span class="principle-num">02</span>
+          </div>
+          <h3 class="principle-title">LEARN</h3>
+          <div class="principle-tagline">Applied Depth</div>
+          <p class="principle-desc">
+            Use real engineering workflows and modern AI technologies. Master distributed systems, LLM orchestration, evaluation metrics, and clean API design through hands-on development alongside industry-standard tooling.
+          </p>
+          <div class="principle-footer">
+            <span class="principle-meta-label">Target Metric</span>
+            <span class="principle-meta-val">Eval Driven / Multi-Tool Sets</span>
+          </div>
+        </div>
+
+        <!-- 03 SHARE -->
+        <div class="principle-card">
+          <div class="principle-top">
+            <div class="principle-icon-box icon-box-purple">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </div>
+            <span class="principle-num">03</span>
+          </div>
+          <h3 class="principle-title">SHARE</h3>
+          <div class="principle-tagline">Open Source DNA</div>
+          <p class="principle-desc">
+            Build openly, collaborate, document, and learn together. Every system architecture, code repository, and engineering process is shared with the community to accelerate other student engineers.
+          </p>
+          <div class="principle-footer">
+            <span class="principle-meta-label">Current Metric</span>
+            <span class="principle-meta-val">100% Public Git Repos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: FEATURED PRODUCT — CAREERAI
+       ========================================================================== -->
+  <section class="section product-feature-section" id="careerai-section">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-label">FEATURED PRODUCT</span>
+          <h2 class="section-title">CareerAI</h2>
+          <p class="section-subtitle">
+            AI-powered career intelligence for students and early-career developers. Combines resume intelligence, skill gap analysis, job matching, and agentic learning roadmaps into one unified platform.
+          </p>
+        </div>
+        <div>
+          <a href="https://github.com/Axious-Labs/CareerAI" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub Repository</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Interactive CareerAI Preview Dashboard Card -->
+      <div class="careerai-preview-box">
+        <div class="preview-nav-bar">
+          <div class="preview-brand-tag">
+            <img src="assets/logo/careerai-icon.svg" alt="CareerAI Icon" width="24" height="24">
+            <span class="preview-title">CareerAI Intelligence Dashboard</span>
+            <span class="badge badge-cyan" style="font-size:10px;">V1.0-STABLE</span>
+          </div>
+
+          <div class="preview-tabs">
+            <button class="preview-tab-btn active" data-view="resume">Resume Intelligence</button>
+            <button class="preview-tab-btn" data-view="skills">Skill Gaps</button>
+            <button class="preview-tab-btn" data-view="jobs">Job Matching</button>
+            <button class="preview-tab-btn" data-view="roadmap">Learning Roadmap</button>
+            <button class="preview-tab-btn" data-view="interview">AI Mock Interview</button>
+          </div>
+        </div>
+
+        <div class="preview-content-grid">
+          <!-- Left Mini Profile Sidebar -->
+          <div class="cai-sidebar">
+            <div class="cai-user-card">
+              <div class="cai-user-header">
+                <div class="cai-avatar">PG</div>
+                <div class="cai-user-info">
+                  <h4>Piyush Gautam</h4>
+                  <p>AI Engineer / Student Lead</p>
+                </div>
+              </div>
+              <div class="cai-stat-row">
+                <div class="cai-stat-item">
+                  <div class="val">94%</div>
+                  <div class="lbl">ATS Fit</div>
+                </div>
+                <div class="cai-stat-item">
+                  <div class="val">18</div>
+                  <div class="lbl">Verified Skills</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="background:#0F1422; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:16px;">
+              <div style="font-family:var(--font-mono); font-size:11px; color:var(--text-muted); text-transform:uppercase; margin-bottom:8px;">Target Career Track</div>
+              <div style="font-size:14px; font-weight:700; color:#FFFFFF; margin-bottom:4px;">AI Systems Engineer</div>
+              <div style="font-size:12px; color:var(--accent-cyan);">GenAI • RAG • LangGraph</div>
+            </div>
+
+            <a href="careerai.html" class="btn btn-primary" style="width:100%; font-size:13px;">
+              <span>View Full CareerAI Suite</span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- Right Dynamic Panel -->
+          <div class="cai-panel cai-panel-target">
+            <div class="cai-panel-header">
+              <h3>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                Resume Intelligence Analysis
+              </h3>
+              <span class="badge badge-emerald">ATS MATCH: 94%</span>
+            </div>
+            <p style="font-size: 13.5px; color: var(--text-secondary); margin-bottom: 16px;">
+              Deep semantic extraction across 42 technical parameters. Vector embeddings match target job ontology.
+            </p>
+            <div style="margin-bottom: 20px;">
+              <h5 style="font-size: 12px; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px;">Extracted &amp; Verified Competencies:</h5>
+              <div class="skill-pill-list">
+                <span class="skill-pill match">✓ Python &amp; FastAPI</span>
+                <span class="skill-pill match">✓ LangGraph &amp; Agents</span>
+                <span class="skill-pill match">✓ Vector Search (FAISS/pgvector)</span>
+                <span class="skill-pill match">✓ Docker &amp; CI/CD</span>
+                <span class="skill-pill match">✓ REST &amp; WebSocket APIs</span>
+              </div>
+            </div>
+            <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); padding: 12px 16px; border-radius: 6px; font-size: 12.5px; color: #FDE68A;">
+              <strong>Optimization Insight:</strong> Quantify throughput gains in your RAG pipeline project (e.g. "+35% latency drop via caching") to boost hiring manager score.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: WHAT WE EXPLORE (6 DOMAIN CARDS)
+       ========================================================================== -->
+  <section class="section" id="technologies">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-label">02 // DOMAIN / TECHNOLOGIES</span>
+          <h2 class="section-title">What We Explore</h2>
+          <p class="section-subtitle">
+            Deep architectural investigations into modern AI systems, RAG mechanics, agentic graphs, and distributed software paradigms.
+          </p>
+        </div>
+        <div class="mono" style="font-size:11px; color:var(--text-muted);">
+          &gt; ACTIVE CLUSTER
+        </div>
+      </div>
+
+      <div class="domain-grid">
+        <!-- 1. Generative AI -->
+        <div class="domain-card">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <h3>Generative AI</h3>
+          <p>
+            Building practical generative AI systems using LLMs, embeddings, RAG, structured outputs, context compression, and intelligent application workflows.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">Context Compression</span>
+            <span class="tech-tag">Flash Attention</span>
+            <span class="tech-tag">LoRA / QLoRA</span>
+          </div>
+        </div>
+
+        <!-- 2. Agentic AI -->
+        <div class="domain-card">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+          <h3>Agentic AI</h3>
+          <p>
+            Constructing tool-using AI agents and multi-step workflows using LangGraph, deterministic state loops, episodic memory, and autonomous error recovery.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">LangGraph</span>
+            <span class="tech-tag">ReAct Loops</span>
+            <span class="tech-tag">Episodic Memory</span>
+          </div>
+        </div>
+
+        <!-- 3. RAG Systems -->
+        <div class="domain-card">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3>RAG Systems</h3>
+          <p>
+            Building retrieval-augmented systems combining semantic search, vector databases, dense/sparse embeddings, context expansion, and grounded generation.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">Dense/Sparse Vector</span>
+            <span class="tech-tag">Context Expansion</span>
+            <span class="tech-tag">Cross-Encoders</span>
+          </div>
+        </div>
+
+        <!-- 4. AI Agents & MCP -->
+        <div class="domain-card">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+          </div>
+          <h3>AI Agents &amp; MCP</h3>
+          <p>
+            Exploring modern agent architectures and Model Context Protocol integrations for standardized server and client-side agent tool capabilities.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">Model Context Protocol</span>
+            <span class="tech-tag">Synthetics</span>
+            <span class="tech-tag">Fast Tools</span>
+          </div>
+        </div>
+
+        <!-- 5. Developer Tools -->
+        <div class="domain-card">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          </div>
+          <h3>Developer Tools</h3>
+          <p>
+            Building developer-focused AI tools that improve engineering productivity, evaluation harnesses, token budgets, and system design pipelines.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">Rust // CLI Tool</span>
+            <span class="tech-tag">Eval Harnesses</span>
+            <span class="tech-tag">Token Budgets</span>
+          </div>
+        </div>
+
+        <!-- 6. Intelligent Applications -->
+        <div class="domain-card">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+          </div>
+          <h3>Intelligent Applications</h3>
+          <p>
+            End-to-end AI applications combining mobile interfaces (Flutter), high-throughput APIs (FastAPI/Node), databases, and intelligent backend services.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">SQLite / pgvector</span>
+            <span class="tech-tag">Streaming UI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: ENGINEERING LOOP (RECURSIVE LIFECYCLE)
+       ========================================================================== -->
+  <section class="section" id="engineering-loop">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-label">RECURSIVE LIFECYCLE</span>
+          <h2 class="section-title">Our Engineering Loop</h2>
+          <p class="section-subtitle">
+            Every initiative at Axious Labs passes through our six-stage production process. Select a phase to inspect current review standards.
+          </p>
+        </div>
+      </div>
+
+      <!-- 6 Horizontal Interactive Stages Bar -->
+      <div class="lifecycle-stages-bar">
+        <button class="lifecycle-btn active" data-stage="0">
+          <span class="stage-num">STAGE 01</span>
+          <span class="stage-title">Exact Thesis</span>
+        </button>
+        <button class="lifecycle-btn" data-stage="1">
+          <span class="stage-num">STAGE 02</span>
+          <span class="stage-title">Architecture &amp; Spec</span>
+        </button>
+        <button class="lifecycle-btn" data-stage="2">
+          <span class="stage-num">STAGE 03</span>
+          <span class="stage-title">FastPOC Prototype</span>
+        </button>
+        <button class="lifecycle-btn" data-stage="3">
+          <span class="stage-num">STAGE 04</span>
+          <span class="stage-title">Eval &amp; Benchmark</span>
+        </button>
+        <button class="lifecycle-btn" data-stage="4">
+          <span class="stage-num">STAGE 05</span>
+          <span class="stage-title">Telemetry Deploy</span>
+        </button>
+        <button class="lifecycle-btn" data-stage="5">
+          <span class="stage-num">STAGE 06</span>
+          <span class="stage-title">Refine &amp; Production</span>
+        </button>
+      </div>
+
+      <!-- Interactive Detailed Inspector Card Below -->
+      <div class="lifecycle-detail-card">
+        <div class="lifecycle-info-box">
+          <h3>
+            <span class="badge badge-cyan life-stage-num">STAGE 01</span>
+            <span class="life-stage-name">Clear &amp; Concrete Problem Formulation</span>
+          </h3>
+          <p class="life-stage-desc">
+            We reject vanity concepts. Any project pitch must articulate a precise failure mode in existing software, why classical logic fails short, and how neural components introduce measurable utility.
+          </p>
+          <div class="lifecycle-spec-list">
+            <div class="spec-item">
+              <span class="spec-label">SYSTEM REVIEW METRICS:</span>
+              <span class="spec-val life-stage-review">5 page RFC containing API contracts, token consumption estimates, and measurable acceptance tests.</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">GATE PASS:</span>
+              <span class="spec-val life-stage-gate">Peer approval from at least two lab contributors before code commit begins.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lifecycle-inspector-terminal">
+          <div style="color:var(--text-muted); font-size:10.5px; margin-bottom:12px; border-bottom:1px solid rgba(255,255,255,0.06); padding-bottom:6px;">
+            RFC INSPECT
+          </div>
+          <div class="inspector-row">
+            <span class="insp-key">FILE:</span>
+            <span class="insp-val life-stage-file" style="color:var(--accent-cyan);">RFC_001_HYBRID_RAG.md</span>
+          </div>
+          <div class="inspector-row">
+            <span class="insp-key">STATUS:</span>
+            <span class="insp-val status-pass life-stage-status">ACCEPTED</span>
+          </div>
+          <div class="inspector-row">
+            <span class="insp-key">REVIEWERS:</span>
+            <span class="insp-val life-stage-reviewers">2 Core Peers</span>
+          </div>
+          <div class="inspector-row">
+            <span class="insp-key">SLA DURATION:</span>
+            <span class="insp-val life-stage-sla">&lt; 72 Hours</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MID-PAGE CONTINUOUS EVALUATION HUD BANNER
+       ========================================================================== -->
+  <div class="container">
+    <div class="telemetry-banner">
+      <img src="assets/images/telemetry_drift_hud.jpg" alt="Continuous Prompt Drift Evaluation HUD" class="telemetry-banner-bg">
+      <div class="telemetry-banner-content">
+        <span class="badge badge-student" style="margin-bottom:14px;">CONTINUOUS EVALUATION</span>
+        <h2 class="telemetry-banner-title">
+          Every pull request is stress-tested against prompt drift.
+        </h2>
+        <p class="telemetry-banner-desc">
+          Automated regression testing before code merges to guarantee deterministic performance, token economy, and strict latency SLAs across every neural endpoint.
+        </p>
+        <div class="telemetry-metrics-strip">
+          <div>BENCHMARK: <span>&lt;410ms/tok // 4-node</span></div>
+          <div>FAIL-RATE: <span>&lt;0.01%</span></div>
+          <div>DRIFT DRIFT-TOL: <span>±0.02 delta</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION: WHY AXIOUS LABS (6 PERSPECTIVE CARDS)
+       ========================================================================== -->
+  <section class="section" id="why-axious">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-label">PERSPECTIVE 004</span>
+          <h2 class="section-title">Why Axious Labs?</h2>
+          <p class="section-subtitle">
+            Built by students, researchers, and builders who believe real learning happens through real software.
+          </p>
+        </div>
+      </div>
+
+      <div class="perspective-grid">
+        <!-- 1. Learn Through Real Engineering -->
+        <div class="perspective-card">
+          <div class="perspective-header">
+            <div class="perspective-icon">01</div>
+            <h3>Learn Through Real Engineering</h3>
+          </div>
+          <p>
+            Not classroom toy exercises. We confront distributed concurrency, state orchestration, vector index caching, and token quota normalization head-on.
+          </p>
+        </div>
+
+        <!-- 2. Products Instead of Demos -->
+        <div class="perspective-card">
+          <div class="perspective-header">
+            <div class="perspective-icon">02</div>
+            <h3>Products Instead of Demos</h3>
+          </div>
+          <p>
+            Isolated Jupyter notebooks are not products. We architect resilient systems with user authentication, persistent databases, and real humans testing daily.
+          </p>
+        </div>
+
+        <!-- 3. Work With Modern AI Systems -->
+        <div class="perspective-card">
+          <div class="perspective-header">
+            <div class="perspective-icon">03</div>
+            <h3>Work With Modern AI Systems</h3>
+          </div>
+          <p>
+            We adopt emerging frameworks early: MCP, LangGraph, DSPy prompt optimizers, and hybrid vector stores before they reach generic corporate curriculums.
+          </p>
+        </div>
+
+        <!-- 4. Collaborate Through GitHub -->
+        <div class="perspective-card">
+          <div class="perspective-header">
+            <div class="perspective-icon">04</div>
+            <h3>Collaborate Through GitHub</h3>
+          </div>
+          <p>
+            Rigorous code reviews, semantic conventional commits, trunk-based CI test runs, and milestone logging mirror the operations of premier engineering firms.
+          </p>
+        </div>
+
+        <!-- 5. Open-Source Where Practical -->
+        <div class="perspective-card">
+          <div class="perspective-header">
+            <div class="perspective-icon">05</div>
+            <h3>Open-Source Where Practical</h3>
+          </div>
+          <p>
+            Knowledge hoarding slows velocity. We release utility libraries, evaluation fixtures, and baseline templates under permissive MIT and Apache licenses.
+          </p>
+        </div>
+
+        <!-- 6. Continuously Experiment & Improve -->
+        <div class="perspective-card">
+          <div class="perspective-header">
+            <div class="perspective-icon">06</div>
+            <h3>Continuously Experiment &amp; Improve</h3>
+          </div>
+          <p>
+            We treat failure as telemetry data. Weekly post-mortems dissect breaking API changes, unexpected token burns, and convert surprises into reusable regression tests.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FINAL CTA SECTION
+       ========================================================================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-content">
+          <span class="section-label" style="color:var(--accent-cyan);">COLLABORATE WITH US</span>
+          <h2 class="cta-title">Ready to build with real systems?</h2>
+          <p class="cta-desc">
+            Explore our open-source codebase on GitHub or connect with us to collaborate on practical AI engineering initiatives.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a href="https://github.com/Axious-Labs" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>View GitHub Organization</span>
+          </a>
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            <span>Contact Axious Labs</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <div class="footer-brand-header">
+            <img src="assets/logo/axious-icon.svg" alt="Axious Labs" width="26" height="26">
+            <span class="nav-brand-text">AXIOUS <span>LABS</span></span>
+            <span class="badge badge-student">STUDENT-LED</span>
+          </div>
+          <p class="footer-desc">
+            An applied AI research and engineering collective pioneering production-grade intelligence built to scale. Architecting resilient systems at the intersection of machine learning and human career growth.
+          </p>
+          <div class="footer-footprint-box">
+            <strong>FOOTPRINT:</strong> Built by students, for real-world problems.
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <div class="footer-col-title">NAVIGATION</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="careerai.html" class="footer-link">CareerAI Product</a></li>
+            <li><a href="about.html" class="footer-link">About the Lab</a></li>
+            <li><a href="team.html" class="footer-link">Research Team</a></li>
+            <li><a href="projects.html" class="footer-link">Open Projects</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources & Code -->
+        <div>
+          <div class="footer-col-title">RESOURCES &amp; CODE</div>
+          <ul class="footer-links">
+            <li>
+              <a href="https://github.com/Axious-Labs" target="_blank" rel="noopener noreferrer" class="footer-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Organization</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Axious-Labs/CareerAI" target="_blank" rel="noopener noreferrer" class="footer-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+                <span>CareerAI Repository</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:axiouslabs@gmail.com" class="footer-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>axiouslabs@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <span class="footer-link" style="color:var(--text-muted);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>+91 9129520822</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Axious Labs. All rights reserved.</div>
+        <div>Engineering Standards v2.4 // Double Monorepo Framework</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>

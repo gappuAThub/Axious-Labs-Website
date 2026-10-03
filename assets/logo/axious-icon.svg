@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="axious-grad-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="40%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="axious-grad-glow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer Geometric Delta 'A' Structure -->
+  <path d="M24 6L41 38H33.5L24 19.5L14.5 38H7L24 6Z" fill="url(#axious-grad-primary)"/>
+  
+  <!-- Inner Cross Network Bridge -->
+  <path d="M16 29.5H32" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" filter="url(#glow)"/>
+  
+  <!-- AI / Network Vertices Nodes -->
+  <!-- Apex Node -->
+  <circle cx="24" cy="6" r="3" fill="#38BDF8" filter="url(#glow)"/>
+  <circle cx="24" cy="6" r="1.5" fill="#FFFFFF"/>
+  
+  <!-- Left Leg Node -->
+  <circle cx="16" cy="29.5" r="2.5" fill="#38BDF8"/>
+  <circle cx="16" cy="29.5" r="1.2" fill="#FFFFFF"/>
+  
+  <!-- Right Leg Node -->
+  <circle cx="32" cy="29.5" r="2.5" fill="#A855F7"/>
+  <circle cx="32" cy="29.5" r="1.2" fill="#FFFFFF"/>
+  
+  <!-- Center Core Node -->
+  <circle cx="24" cy="29.5" r="2.8" fill="#FFFFFF" filter="url(#glow)"/>
+  <circle cx="24" cy="29.5" r="1.2" fill="#6366F1"/>
+  
+  <!-- Base Corner Nodes -->
+  <circle cx="10.5" cy="38" r="2" fill="#6366F1"/>
+  <circle cx="37.5" cy="38" r="2" fill="#8B5CF6"/>
+</svg>

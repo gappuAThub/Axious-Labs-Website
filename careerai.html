@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareerAI — AI-Powered Career Intelligence Platform | Axious Labs</title>
+  <meta name="description" content="CareerAI combines resume intelligence, skill gap analysis, semantic job matching, RAG, and agentic workflows into a unified intelligence platform for early-career developers.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/axious-favicon.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="index.html" class="nav-logo-link" aria-label="Axious Labs Home">
+          <img src="assets/logo/axious-icon.svg" alt="Axious Labs" class="nav-logo-icon" width="28" height="28">
+          <span class="nav-brand-text">AXIOUS <span>LABS</span></span>
+        </a>
+        <span class="badge badge-student">STUDENT-LED</span>
+      </div>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="careerai.html" class="nav-link active">CareerAI</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Axious-Labs/CareerAI" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="#demo" class="btn btn-primary btn-sm">Explore Platform</a>
+        <button class="nav-mobile-toggle" aria-label="Toggle Navigation Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="careerai.html" class="nav-link active">CareerAI</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="team.html" class="nav-link">Team</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- CAREERAI HERO -->
+  <section class="cai-hero">
+    <div class="container cai-hero-center">
+      <div style="display:inline-flex; align-items:center; gap:8px; margin-bottom:20px;">
+        <img src="assets/logo/careerai-icon.svg" alt="CareerAI" width="36" height="36">
+        <span class="badge badge-cyan">FEATURED VENTURE PRODUCT</span>
+      </div>
+
+      <h1 class="hero-headline">
+        Career decisions,<br>
+        <span class="gradient-text">powered by AI.</span>
+      </h1>
+
+      <p class="hero-subheadline" style="margin: 0 auto 32px auto;">
+        CareerAI combines resume intelligence, skill analysis, job matching, RAG, and agentic workflows into one career intelligence platform designed specifically for students and early-career developers.
+      </p>
+
+      <div class="hero-cta-group" style="justify-content: center; margin-bottom: 32px;">
+        <a href="https://github.com/Axious-Labs/CareerAI" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>View GitHub Repository</span>
+        </a>
+        <a href="#demo" class="btn btn-primary btn-lg">Explore Interactive Platform</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE DEMO CONTAINER -->
+  <section class="section" id="demo" style="padding-top: 0;">
+    <div class="container">
+      <div class="careerai-preview-box">
+        <div class="preview-nav-bar">
+          <div class="preview-brand-tag">
+            <img src="assets/logo/careerai-icon.svg" alt="CareerAI Icon" width="26" height="26">
+            <span class="preview-title">CareerAI Intelligence Matrix</span>
+            <span class="badge badge-cyan" style="font-size:10px;">LIVE SIMULATION</span>
+          </div>
+
+          <div class="preview-tabs">
+            <button class="preview-tab-btn active" data-view="resume">Resume Intelligence</button>
+            <button class="preview-tab-btn" data-view="skills">Skill Gaps</button>
+            <button class="preview-tab-btn" data-view="jobs">Job Matching</button>
+            <button class="preview-tab-btn" data-view="roadmap">Learning Roadmap</button>
+            <button class="preview-tab-btn" data-view="interview">AI Mock Interview</button>
+          </div>
+        </div>
+
+        <div class="preview-content-grid">
+          <div class="cai-sidebar">
+            <div class="cai-user-card">
+              <div class="cai-user-header">
+                <div class="cai-avatar">PG</div>
+                <div class="cai-user-info">
+                  <h4>Piyush Gautam</h4>
+                  <p>AI Engineer / Student Lead</p>
+                </div>
+              </div>
+              <div class="cai-stat-row">
+                <div class="cai-stat-item">
+                  <div class="val">94%</div>
+                  <div class="lbl">ATS Fit</div>
+                </div>
+                <div class="cai-stat-item">
+                  <div class="val">18</div>
+                  <div class="lbl">Verified Skills</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="background:#0F1422; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:16px;">
+              <div style="font-family:var(--font-mono); font-size:11px; color:var(--text-muted); text-transform:uppercase; margin-bottom:8px;">Target Career Track</div>
+              <div style="font-size:14px; font-weight:700; color:#FFFFFF; margin-bottom:4px;">AI Systems Engineer</div>
+              <div style="font-size:12px; color:var(--accent-cyan);">GenAI • RAG • LangGraph</div>
+            </div>
+
+            <div style="background:#0F1422; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:16px;">
+              <div style="font-family:var(--font-mono); font-size:11px; color:var(--text-muted); text-transform:uppercase; margin-bottom:6px;">Agent Loop Status</div>
+              <div style="font-size:12.5px; color:#A7F3D0; display:flex; align-items:center; gap:6px;">
+                <span style="width:6px; height:6px; border-radius:50%; background:#10B981;"></span>
+                State Machine Converged
+              </div>
+            </div>
+          </div>
+
+          <div class="cai-panel cai-panel-target">
+            <div class="cai-panel-header">
+              <h3>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                Resume Intelligence Analysis
+              </h3>
+              <span class="badge badge-emerald">ATS MATCH: 94%</span>
+            </div>
+            <p style="font-size: 13.5px; color: var(--text-secondary); margin-bottom: 16px;">
+              Deep semantic extraction across 42 technical parameters. Vector embeddings match target job ontology.
+            </p>
+            <div style="margin-bottom: 20px;">
+              <h5 style="font-size: 12px; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px;">Extracted &amp; Verified Competencies:</h5>
+              <div class="skill-pill-list">
+                <span class="skill-pill match">✓ Python &amp; FastAPI</span>
+                <span class="skill-pill match">✓ LangGraph &amp; Agents</span>
+                <span class="skill-pill match">✓ Vector Search (FAISS/pgvector)</span>
+                <span class="skill-pill match">✓ Docker &amp; CI/CD</span>
+                <span class="skill-pill match">✓ REST &amp; WebSocket APIs</span>
+              </div>
+            </div>
+            <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); padding: 12px 16px; border-radius: 6px; font-size: 12.5px; color: #FDE68A;">
+              <strong>Optimization Insight:</strong> Quantify throughput gains in your RAG pipeline project (e.g. "+35% latency drop via caching") to boost hiring manager score.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 DETAILED CORE CAPABILITIES -->
+  <section class="section" id="capabilities">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-label">PLATFORM MODULES</span>
+          <h2 class="section-title">Seven Core Capabilities</h2>
+          <p class="section-subtitle">
+            Engineered from ground up to solve the cold-start problem for developers entering modern AI engineering.
+          </p>
+        </div>
+      </div>
+
+      <div class="domain-grid">
+        <!-- 1. Career Profile -->
+        <div class="domain-card">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3>01. Career Profile</h3>
+          <p>
+            Dynamic multidimensional developer persona integrating verified code repositories, project milestones, and self-directed curriculum tracks into a persistent semantic vector.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">Vector Profile</span>
+            <span class="tech-tag">Repo Parsing</span>
+          </div>
+        </div>
+
+        <!-- 2. Resume Intelligence -->
+        <div class="domain-card">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3>02. Resume Intelligence</h3>
+          <p>
+            Deterministic parsing across 42 technical dimensions. Extracts concrete metric claims, validates tool experience, flags vague phrasing, and computes ATS compatibility score.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">ATS Engine</span>
+            <span class="tech-tag">Semantic Extraction</span>
+          </div>
+        </div>
+
+        <!-- 3. Skill Gap Analysis -->
+        <div class="domain-card">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>03. Skill Gap Analysis</h3>
+          <p>
+            Identifies exact deltas between your current codebase mastery and production hiring standards. Highlights missing prerequisites, system design holes, and optimization knowledge.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">Skill Taxonomy</span>
+            <span class="tech-tag">Delta Vector</span>
+          </div>
+        </div>
+
+        <!-- 4. Semantic Job Matching -->
+        <div class="domain-card">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>04. Job Matching</h3>
+          <p>
+            Replaces simplistic keyword scanning with FAISS / pgvector similarity clustering. Matches developers based on authentic architectural experience and engineering velocity.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">FAISS</span>
+            <span class="tech-tag">pgvector</span>
+            <span class="tech-tag">Cosine Distance</span>
+          </div>
+        </div>
+
+        <!-- 5. Personalized Learning -->
+        <div class="domain-card">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>05. Personalized Learning</h3>
+          <p>
+            Generates directed acyclic curriculum graphs tailored to your missing proficiencies. Recommends targeted RFC documentation, source code repositories, and hands-on lab exercises.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">Curriculum DAG</span>
+            <span class="tech-tag">Milestone Checklists</span>
+          </div>
+        </div>
+
+        <!-- 6. AI Career Assistant -->
+        <div class="domain-card">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>06. AI Career Assistant</h3>
+          <p>
+            An interactive conversational agent equipped with Model Context Protocol (MCP) tools. Can audit repository commits, review portfolio architectures, and simulate recruiter conversations.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">MCP Tools</span>
+            <span class="tech-tag">Streaming Context</span>
+          </div>
+        </div>
+
+        <!-- 7. AI Mock Interviews -->
+        <div class="domain-card" style="grid-column: span 3;">
+          <div class="domain-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>07. AI Mock Interviews</h3>
+          <p>
+            Realistic engineering interview simulations testing algorithm trade-offs, system design under load, concurrency pitfalls, and LangGraph architecture. Evaluated against real tech bar rubrics with actionable feedback.
+          </p>
+          <div class="domain-tags">
+            <span class="tech-tag">System Design Rubric</span>
+            <span class="tech-tag">Speech &amp; Text Probes</span>
+            <span class="tech-tag">Automated Scoring</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL ARCHITECTURE SECTION -->
+  <section class="section" id="architecture" style="background:#090C14; border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-label">SYSTEM TOPOLOGY</span>
+          <h2 class="section-title">Technical Architecture</h2>
+          <p class="section-subtitle">
+            An end-to-end distributed system orchestrating cross-platform mobile experiences with resilient Python neural microservices.
+          </p>
+        </div>
+      </div>
+
+      <!-- Pipeline Visualization -->
+      <div class="cai-architecture-pipeline">
+        <div class="pipe-node active">
+          <div style="font-family:var(--font-mono); font-size:10px; color:var(--accent-cyan); margin-bottom:4px;">CLIENT</div>
+          <div style="font-weight:700; color:#FFFFFF;">Flutter Mobile App</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">iOS / Android / Web</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+
+        <div class="pipe-node">
+          <div style="font-family:var(--font-mono); font-size:10px; color:var(--accent-indigo); margin-bottom:4px;">GATEWAY</div>
+          <div style="font-weight:700; color:#FFFFFF;">Node.js / TS API</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">Prisma • JWT • Queues</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+
+        <div class="pipe-node">
+          <div style="font-family:var(--font-mono); font-size:10px; color:var(--accent-cyan); margin-bottom:4px;">NEURAL CORE</div>
+          <div style="font-weight:700; color:#FFFFFF;">Python AI Services</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">FastAPI • Async Dispatch</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+
+        <div class="pipe-node">
+          <div style="font-family:var(--font-mono); font-size:10px; color:var(--accent-purple); margin-bottom:4px;">INTELLIGENCE</div>
+          <div style="font-weight:700; color:#FFFFFF;">GenAI + RAG + Agents</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">LangGraph • Gemini • MCP</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+
+        <div class="pipe-node">
+          <div style="font-family:var(--font-mono); font-size:10px; color:var(--accent-emerald); margin-bottom:4px;">STORAGE</div>
+          <div style="font-weight:700; color:#FFFFFF;">PostgreSQL + Vector</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">FAISS • pgvector • Cache</div>
+        </div>
+      </div>
+
+      <!-- Complete Technology Badges Matrix -->
+      <div style="margin-top: 48px;">
+        <h4 style="font-size:14px; font-family:var(--font-mono); color:var(--text-muted); text-transform:uppercase; margin-bottom:16px;">
+          Validated Technology Stack:
+        </h4>
+        <div class="tech-matrix-grid">
+          <div class="tech-badge-card">Flutter</div>
+          <div class="tech-badge-card">Dart</div>
+          <div class="tech-badge-card">Node.js</div>
+          <div class="tech-badge-card">TypeScript</div>
+          <div class="tech-badge-card">Python</div>
+          <div class="tech-badge-card">FastAPI</div>
+          <div class="tech-badge-card">PostgreSQL</div>
+          <div class="tech-badge-card">Prisma ORM</div>
+          <div class="tech-badge-card">Gemini</div>
+          <div class="tech-badge-card">LangGraph</div>
+          <div class="tech-badge-card">RAG Engine</div>
+          <div class="tech-badge-card">FAISS Vector</div>
+          <div class="tech-badge-card">MCP Server</div>
+          <div class="tech-badge-card">Docker</div>
+          <div class="tech-badge-card">GitHub Actions</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-content">
+          <span class="section-label" style="color:var(--accent-cyan);">OPEN SOURCE PLATFORM</span>
+          <h2 class="cta-title">Explore CareerAI on GitHub</h2>
+          <p class="cta-desc">
+            Review the code, inspect the schemas, spin up the local development containers, and contribute to student-led AI engineering.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a href="https://github.com/Axious-Labs/CareerAI" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>Browse CareerAI Repo</span>
+          </a>
+          <a href="contact.html" class="btn btn-secondary btn-lg">Contact Lab Leads</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-header">
+            <img src="assets/logo/axious-icon.svg" alt="Axious Labs" width="26" height="26">
+            <span class="nav-brand-text">AXIOUS <span>LABS</span></span>
+            <span class="badge badge-student">STUDENT-LED</span>
+          </div>
+          <p class="footer-desc">
+            An applied AI research and engineering collective pioneering production-grade intelligence built to scale.
+          </p>
+          <div class="footer-footprint-box">
+            <strong>FOOTPRINT:</strong> Built by students, for real-world problems.
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">NAVIGATION</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="careerai.html" class="footer-link">CareerAI Product</a></li>
+            <li><a href="about.html" class="footer-link">About the Lab</a></li>
+            <li><a href="team.html" class="footer-link">Research Team</a></li>
+            <li><a href="projects.html" class="footer-link">Open Projects</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">RESOURCES &amp; CODE</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/Axious-Labs" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Organization</a></li>
+            <li><a href="https://github.com/Axious-Labs/CareerAI" target="_blank" rel="noopener noreferrer" class="footer-link">CareerAI Repository</a></li>
+            <li><a href="mailto:axiouslabs@gmail.com" class="footer-link">axiouslabs@gmail.com</a></li>
+            <li><span class="footer-link" style="color:var(--text-muted);">+91 9129520822</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Axious Labs. All rights reserved.</div>
+        <div>Engineering Standards v2.4 // Double Monorepo Framework</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

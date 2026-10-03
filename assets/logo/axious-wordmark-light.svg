@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 44" width="240" height="44" fill="none">
+  <defs>
+    <linearGradient id="wm-light-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="50%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Axious Icon -->
+  <g transform="translate(4, 4)">
+    <path d="M18 4.5L31 29H25.2L18 15L10.8 29H5L18 4.5Z" fill="url(#wm-light-grad)"/>
+    <path d="M12 22H24" stroke="#0284C7" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="18" cy="4.5" r="2.2" fill="#0284C7"/>
+    <circle cx="18" cy="4.5" r="1.1" fill="#FFFFFF"/>
+    <circle cx="12" cy="22" r="1.8" fill="#0284C7"/>
+    <circle cx="24" cy="22" r="1.8" fill="#7C3AED"/>
+    <circle cx="18" cy="22" r="2" fill="#FFFFFF"/>
+    <circle cx="7.5" cy="29" r="1.5" fill="#4F46E5"/>
+    <circle cx="28.5" cy="29" r="1.5" fill="#7C3AED"/>
+  </g>
+
+  <!-- Typography: AXIOUS LABS -->
+  <text x="48" y="27" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="800" letter-spacing="0.08em" fill="#0F172A">AXIOUS</text>
+  <text x="146" y="27" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="700" letter-spacing="0.08em" fill="#4F46E5">LABS</text>
+</svg>
